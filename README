@@ -19,6 +19,17 @@ LPCPU bundles additional tools for processing the data and generating graphs.
 Note: To create a new lpcpu.tar.bz2 tar ball, run:  
 ./create-tarball.sh
 
+Pre-req installations on RHEL8 Systems:
+========================================
+
+The following packages have to be installed prior running the script:
+
+  ```
+  dnf install https://www.rpmfind.net/linux/centos/7.9.2009/os/x86_64/Packages/oprofile-0.9.9-27.el7.x86_64.rpm -y
+  dnf install policycoreutils -y
+  dnf install perl-Thread-Queue.noarch -y
+  ```
+
 2. Running LPCPU
 ================
 
